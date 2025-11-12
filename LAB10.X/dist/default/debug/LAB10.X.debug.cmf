@@ -1,0 +1,469 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/_ext/1472/TESTCODE.o
+code CODE 0 8 8 15B 2 1
+resetVect CODE 0 0 0 1 2 1
+isrVect CODE 0 4 4 1 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+CONST 1-3 2
+CONST 5-7 2
+CONST 163-FFF 2
+ENTRY 1-3 2
+ENTRY 5-7 2
+ENTRY 163-FFF 2
+IDLOC 2000-2003 2
+CODE 1-3 2
+CODE 5-7 2
+CODE 163-FFF 2
+SFR0 2-7 1
+SFR0 A-F 1
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 1-3 2
+STRCODE 5-7 2
+STRCODE 163-FFF 2
+STRING 1-3 2
+STRING 5-7 2
+STRING 163-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/_ext/1472/TESTCODE.o
+4 isrVect CODE >60:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+0 resetVect CODE >57:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8 code CODE >68:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9 code CODE >69:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A code CODE >70:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B code CODE >71:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C code CODE >72:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D code CODE >73:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E code CODE >74:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F code CODE >75:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10 code CODE >76:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11 code CODE >77:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13 code CODE >78:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14 code CODE >80:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15 code CODE >81:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+16 code CODE >82:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+17 code CODE >85:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+18 code CODE >86:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+19 code CODE >87:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1A code CODE >88:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1B code CODE >89:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1C code CODE >92:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1D code CODE >93:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1E code CODE >94:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+1F code CODE >98:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+20 code CODE >99:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+21 code CODE >100:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+22 code CODE >101:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+23 code CODE >104:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+24 code CODE >105:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+25 code CODE >106:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+26 code CODE >107:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+27 code CODE >108:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+28 code CODE >110:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+29 code CODE >111:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2A code CODE >112:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2B code CODE >113:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2C code CODE >114:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2D code CODE >115:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2E code CODE >116:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+2F code CODE >117:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+30 code CODE >118:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+31 code CODE >122:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+32 code CODE >123:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+33 code CODE >124:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+34 code CODE >127:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+35 code CODE >128:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+36 code CODE >129:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+37 code CODE >130:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+38 code CODE >133:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+39 code CODE >134:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3A code CODE >135:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3B code CODE >136:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3C code CODE >137:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3D code CODE >140:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3E code CODE >141:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+3F code CODE >142:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+40 code CODE >143:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+41 code CODE >144:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+42 code CODE >145:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+43 code CODE >147:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+44 code CODE >148:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+45 code CODE >149:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+46 code CODE >150:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+47 code CODE >151:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+48 code CODE >152:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+49 code CODE >153:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4A code CODE >154:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4B code CODE >155:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4C code CODE >156:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4D code CODE >159:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4E code CODE >160:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+4F code CODE >161:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+50 code CODE >163:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+51 code CODE >164:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+52 code CODE >165:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+53 code CODE >167:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+54 code CODE >168:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+55 code CODE >170:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+56 code CODE >171:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+57 code CODE >173:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+58 code CODE >174:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+59 code CODE >175:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+5A code CODE >177:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+5B code CODE >180:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+5D code CODE >181:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+5E code CODE >182:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+60 code CODE >183:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+61 code CODE >184:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+62 code CODE >185:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+63 code CODE >186:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+64 code CODE >187:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+65 code CODE >188:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+66 code CODE >189:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+67 code CODE >190:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+68 code CODE >191:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+69 code CODE >192:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+6A code CODE >194:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+6B code CODE >195:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+6C code CODE >196:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+6D code CODE >197:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+6F code CODE >198:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+70 code CODE >200:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+71 code CODE >203:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+73 code CODE >204:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+74 code CODE >205:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+75 code CODE >206:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+76 code CODE >207:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+77 code CODE >208:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+79 code CODE >209:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+7A code CODE >210:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+7C code CODE >211:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+7D code CODE >212:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+7E code CODE >215:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+7F code CODE >216:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+80 code CODE >217:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+81 code CODE >218:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+83 code CODE >219:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+84 code CODE >220:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+85 code CODE >221:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+86 code CODE >222:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+87 code CODE >223:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+88 code CODE >224:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+89 code CODE >225:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8A code CODE >226:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8B code CODE >227:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8C code CODE >228:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8D code CODE >229:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+8E code CODE >232:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+90 code CODE >233:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+91 code CODE >234:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+92 code CODE >235:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+93 code CODE >236:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+94 code CODE >237:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+95 code CODE >238:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+96 code CODE >239:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+97 code CODE >240:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+98 code CODE >241:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+99 code CODE >242:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9A code CODE >243:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9B code CODE >244:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9C code CODE >246:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9D code CODE >247:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9E code CODE >249:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+9F code CODE >250:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A0 code CODE >251:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A1 code CODE >254:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A3 code CODE >255:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A4 code CODE >256:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A5 code CODE >257:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A6 code CODE >258:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A7 code CODE >259:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+A8 code CODE >262:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AA code CODE >263:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AB code CODE >264:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AC code CODE >265:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AD code CODE >266:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AE code CODE >267:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+AF code CODE >268:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B0 code CODE >269:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B1 code CODE >270:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B2 code CODE >271:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B4 code CODE >272:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B5 code CODE >273:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B6 code CODE >274:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B7 code CODE >275:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+B8 code CODE >278:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BA code CODE >279:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BB code CODE >280:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BC code CODE >281:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BD code CODE >282:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BE code CODE >283:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+BF code CODE >284:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C0 code CODE >285:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C1 code CODE >286:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C2 code CODE >287:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C3 code CODE >288:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C4 code CODE >289:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C6 code CODE >290:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C7 code CODE >291:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+C9 code CODE >292:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+CA code CODE >293:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+CC code CODE >294:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+CD code CODE >295:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+CE code CODE >296:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+CF code CODE >299:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D1 code CODE >300:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D2 code CODE >301:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D3 code CODE >302:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D4 code CODE >303:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D5 code CODE >304:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D7 code CODE >305:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D8 code CODE >306:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+D9 code CODE >307:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+DB code CODE >308:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+DC code CODE >309:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+DD code CODE >312:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+DF code CODE >313:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E0 code CODE >314:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E1 code CODE >315:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E3 code CODE >316:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E4 code CODE >317:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E5 code CODE >318:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E6 code CODE >319:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E7 code CODE >320:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E8 code CODE >321:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+E9 code CODE >322:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+EA code CODE >323:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+EB code CODE >324:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+ED code CODE >325:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+EE code CODE >326:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+EF code CODE >329:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F1 code CODE >330:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F2 code CODE >331:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F3 code CODE >332:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F4 code CODE >333:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F5 code CODE >334:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F6 code CODE >335:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F7 code CODE >336:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+F8 code CODE >337:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FA code CODE >338:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FB code CODE >339:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FC code CODE >340:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FD code CODE >341:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FE code CODE >342:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+FF code CODE >343:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+100 code CODE >347:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+101 code CODE >348:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+103 code CODE >349:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+104 code CODE >350:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+105 code CODE >351:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+106 code CODE >352:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+107 code CODE >353:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+108 code CODE >354:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+109 code CODE >355:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10A code CODE >356:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10B code CODE >361:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10C code CODE >362:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10D code CODE >364:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10E code CODE >365:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+10F code CODE >367:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+110 code CODE >368:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+111 code CODE >370:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+112 code CODE >371:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+113 code CODE >373:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+114 code CODE >374:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+115 code CODE >376:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+116 code CODE >377:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+117 code CODE >379:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+118 code CODE >380:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+119 code CODE >382:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11A code CODE >383:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11B code CODE >385:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11C code CODE >386:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11D code CODE >388:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11E code CODE >389:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+11F code CODE >391:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+120 code CODE >392:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+121 code CODE >394:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+122 code CODE >395:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+123 code CODE >397:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+124 code CODE >398:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+125 code CODE >400:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+126 code CODE >401:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+127 code CODE >403:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+128 code CODE >404:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+129 code CODE >406:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+12A code CODE >407:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+12B code CODE >410:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+12D code CODE >411:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+12E code CODE >412:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+12F code CODE >414:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+130 code CODE >415:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+131 code CODE >417:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+132 code CODE >418:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+133 code CODE >419:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+134 code CODE >420:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+135 code CODE >421:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+136 code CODE >422:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+137 code CODE >423:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+138 code CODE >424:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+139 code CODE >425:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13A code CODE >426:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13B code CODE >430:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13C code CODE >431:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13D code CODE >432:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13E code CODE >433:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+13F code CODE >434:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+140 code CODE >435:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+141 code CODE >436:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+142 code CODE >437:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+143 code CODE >438:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+144 code CODE >439:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+145 code CODE >443:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+146 code CODE >444:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+147 code CODE >445:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+148 code CODE >446:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+149 code CODE >447:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14A code CODE >448:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14B code CODE >449:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14C code CODE >450:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14D code CODE >451:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14E code CODE >452:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+14F code CODE >456:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+150 code CODE >457:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+151 code CODE >458:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+152 code CODE >459:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+153 code CODE >460:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+154 code CODE >461:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+155 code CODE >462:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+156 code CODE >463:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+157 code CODE >464:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+158 code CODE >465:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+159 code CODE >469:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15A code CODE >472:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15B code CODE >473:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15C code CODE >474:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15D code CODE >475:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15E code CODE >478:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+15F code CODE >479:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+160 code CODE >480:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+161 code CODE >481:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+162 code CODE >482:C:\Users\alexi\MPLABXProjects\FIRSTTENTHPROJECT/TESTCODE.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 2C6 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HisrVect A 0 CODE 0 isrVect -
+__Hudata_bank0 2C6 0 ABS 0 udata_bank0 -
+__Hudata_bank1 2C6 0 ABS 0 udata_bank1 -
+__Hudata_bank2 2C6 0 ABS 0 udata_bank2 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hedata 2C6 0 ABS 0 edata -
+__Hudata 2C6 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 2C6 0 ABS 0 edata -
+__Ludata 2C6 0 ABS 0 udata -
+__Hcode 2C6 0 CODE 0 code -
+__Hdata 2C6 0 ABS 0 data -
+__Lcode 10 0 CODE 0 code -
+__Ldata 2C6 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__LisrVect 8 0 CODE 0 isrVect -
+__HresetVect 2 0 CODE 0 resetVect -
+__Ludata_bank0 2C6 0 ABS 0 udata_bank0 -
+__Ludata_bank1 2C6 0 ABS 0 udata_bank1 -
+__Ludata_bank2 2C6 0 ABS 0 udata_bank2 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__LresetVect 0 0 CODE 0 resetVect -
+__Hudata_shr 2C6 0 ABS 0 udata_shr -
+__Ludata_shr 2C6 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 8 10 15B 2
+resetVect 0 0 0 1 2
+isrVect 0 4 8 1 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
